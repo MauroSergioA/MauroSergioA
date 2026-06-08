@@ -40,7 +40,6 @@ Google Sheets►
 
 | Repositório | Descrição | Stack |
 |---|---|---|
-| [superque-dbt](https://github.com/MauroSergioA/superque-dbt) | Modelos dbt do DW do varejo | dbt · PostgreSQL |
 | [Retail-Data-Pipelines](https://github.com/MauroSergioA/retail-data-pipelines) | Pipelines de extração | Apache Hop · Oracle |
 
 ## Contato
