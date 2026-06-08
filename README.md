@@ -27,12 +27,14 @@ Data Warehouse multicamada (Bronze / Silver / Gold) para uma rede de varejo alim
 
 ## Arquitetura
 
-Fontes          Extração      Armazenamento    Transformação    Consumo
-─────────       ────────      ─────────────    ─────────────    ───────
-Oracle ERP  ──►             
-SQL Server  ──► Apache Hop ──► Bronze ──► dbt ──► Silver ──►  Power BI
-APIs REST   ──►                                    └──► Gold ──► Metabase
+```
+Fontes          Extração       Bronze    Transformação    Silver / Gold    Consumo
+──────────      ────────       ──────    ─────────────    ─────────────    ───────
+Oracle ERP  ──►
+SQL Server  ──► Apache Hop ──► Bronze ──► dbt ──────────► Silver ───────► Power BI
+APIs REST   ──►                                            └──► Gold ────► Metabase
 Google Sheets►
+```
 
 ## Projetos
 
